@@ -10,7 +10,9 @@ More likely, I need native version
     `dwt_max_level` (from pywt/_extensions/_dwt.py)
 `dwt2` (from pywt/_multidim.py)
     `dwtn` (from pywt/_multidim.py)
-        `dwt_axis` (from ._extensions._dwt)
+        `dwt_axis` (from ._extensions._dwt.pyx)
+            `c_wt.double_downcoef_axis` (from pywt/_extensions/c_wt.pxd)
+            (from pywt/_extensions/c/wt.h)
 
 
 The dwt_axis function in the _dwt.pyx file performs the discrete wavelet transform (DWT) along a specified axis of a multi-dimensional numpy array. Here's a step-by-step explanation of what it does:
